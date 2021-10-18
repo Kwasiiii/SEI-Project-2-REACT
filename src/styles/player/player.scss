@@ -1,0 +1,29 @@
+.players_container{
+  background-image: url('https://www.thesportsdb.com/images/media/league/fanart/srdqlb1619946305.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: calc(100vh - 76px);
+  font-family: 'Montserrat', sans-serif;
+  .allplayers{
+    font-family: $fontstyle;
+    color: white;
+    position: relative;
+    top: 20px;
+  }
+  h6{
+    color: white;
+    font-style: italic;
+  }
+  .roster_content{
+    background-color: white;
+    max-width: 60vw;
+    max-height: 80vh;
+    margin: 40px auto 0;
+  }
+}
+
+.player-page-head{
+  color: white;
+}
+

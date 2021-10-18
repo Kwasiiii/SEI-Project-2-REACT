@@ -1,0 +1,19 @@
+.site-wrapper{
+  height: calc(100vh - 76px);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),url('https://www.thesportsdb.com//images//media//league//fanart//wtqwqq1453033773.jpg');
+  background-size: cover;
+}
+
+.row{
+  max-width: 60%;
+  margin: auto;
+  max-height: 100vh;
+}
+
+.team-images{
+  width: 150px;
+  transition: 0.4s ease-in-out;
+  &:hover{
+    transform: scale(1.5);
+  }
+}
