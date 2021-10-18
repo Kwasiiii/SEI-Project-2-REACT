@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom'
 const TeamCard = () => {
 
   const [selectedTeam, setSelectedTeam] = useState(null)
-  const [ hasError, setHasError ] = useState(false)
 
   const [teamPlayers, setTeamPlayers] = useState([])
   const { idTeam } = useParams()
@@ -19,7 +18,7 @@ const TeamCard = () => {
         setSelectedTeam(data.teams[0])
         console.log(data.teams)
       } catch (err) {
-        setHasError(true)
+        console.log(err)
       }
     }
     getTeam()
@@ -32,7 +31,7 @@ const TeamCard = () => {
         setTeamPlayers(data.player)
         console.log(data.player)
       } catch (err) {
-        setHasError(true)
+        console.log(err)
       }
     }
     getPlayer()
